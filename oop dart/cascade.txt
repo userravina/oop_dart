@@ -1,0 +1,28 @@
+10. write a Dart Class which illustrates the use of cascade operator.
+
+import 'dart:io';
+
+class Method
+{
+  String a="";
+  String b="";
+
+  void get_string()
+  {
+    print("Enter the String:-");
+    a = stdin.readLineSync()!;
+
+  }
+  void Print_String()
+  {
+    print("befor upper case");
+    b = a.toUpperCase();
+    print(b);
+  }
+}
+void main()
+{
+  Method d1 = Method();
+
+  d1..get_string()..Print_String();
+}

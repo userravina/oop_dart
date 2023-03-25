@@ -1,0 +1,1 @@
+5.write a dart program to illustrate the use of positional parameters by creating a function which returns the sum of passed parameters.

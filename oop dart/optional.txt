@@ -1,0 +1,40 @@
+4.write a Dart to create a function which accepts marks of 3 to 5 occupations and returns a percentage of success to gain a new job as a software developer(using optional parameters).
+
+import 'dart:io';
+import 'dart:math';
+
+void main()
+{
+   int math,phy,che,eng,fun;
+   print("=====Enter your exam mark=====");
+
+   stdout.write("math's:-");
+   math = int.parse(stdin.readLineSync()!);
+   stdout.write("physics:-");
+   phy = int.parse(stdin.readLineSync()!);
+   stdout.write("chemistry:-");
+   che = int.parse(stdin.readLineSync()!);
+   stdout.write("English:-");
+   eng = int.parse(stdin.readLineSync()!);
+   stdout.write("Fundamental:-");
+   fun = int.parse(stdin.readLineSync()!);
+
+   result(math,phy,che,eng,fun);
+}
+void result(int math,int phy,int che,int eng,int fun)
+{
+    int sum;
+    sum = math+phy+che+eng+fun;
+    num p = (sum/500)*100;
+
+    print("your percentage is => $p");
+
+    if(p > 70)
+    {
+       print("your are eligible for softwere developer");
+    }
+    else
+    {
+        print("you are not eligible for softwere developer");
+    }
+}

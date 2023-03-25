@@ -1,0 +1,24 @@
+7.Find factorial of given number using recursion with Class & Object.
+
+import 'dart:io';
+
+class Factorial
+{
+  int n=0,ans=1;
+
+  void setData()
+  {
+    print("Enter a number:-");
+    n = int.parse(stdin.readLineSync()!);
+    for(int i=1; i<=n; i++)
+      {
+        ans = ans*i;
+      }
+    print("Factorial:-$ans");
+  }
+}
+void main()
+{
+  Factorial a=Factorial();
+  a.setData();
+} 

@@ -1,0 +1,28 @@
+8. write a Dart Class which has two methods get_String and print_String.get_String accept a String from the user and print_String print the  String in upper case.
+
+import 'dart:io';
+
+class Method
+{
+  String a="";
+  String b="";
+  void get_string()
+  {
+    print("Enter the String:-");
+    a = stdin.readLineSync()!;
+    
+  }
+  void Print_String()
+  {
+    print("befor upper case");
+    b = a.toUpperCase();
+    print(b);
+  }
+}
+void main()
+{
+  Method d1 = Method();
+
+  d1.get_string();
+  d1.Print_String();
+}

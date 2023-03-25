@@ -1,0 +1,81 @@
+3.write a dart program to make a simple calculator functionality by creating various different fuctions with switch case.
+
+import 'dart:io';
+
+void main()
+{
+    int a,b,n,c;
+    
+    stdout.write("Enter a value:-");
+    a=int.parse(stdin.readLineSync()!);
+
+    stdout.write("Enter b value:-");
+    b=int.parse(stdin.readLineSync()!);
+    
+    print("Press nnumber 1 for adition");
+    print("Press nnumber 2 for substraction");
+    print("Press nnumber 3 for multipecation");
+    print("Press nnumber 4 for divition");
+    print("Press nnumber 5 for module");
+
+    stdout.write("Enter your choice:-");
+    n=int.parse(stdin.readLineSync()!);
+
+    switch(n)
+    {
+        case 1 :
+            {
+                c = addition(a, b);
+                print("Addition is = $c");
+                break;
+            }
+        case 2 :
+            {
+                c=subtraction(a,b);
+                print("subtraction is = $c");
+                break;
+            }
+        case 3 :
+            {
+                c=multiple(a,b);
+                print("multiplecation is = $c");
+                break;
+            }
+        case 4 :
+            {
+                c=divition(a,b).toInt();
+                print("divition is = $c");
+                break;
+            }
+        case 5 :
+            {
+                c=module(a,b);
+                print("module is = $c");
+                break;
+            }
+        default:
+            {
+                print("---Invalid Choice--");
+            }
+    }
+}
+int addition(int a,int b)
+{
+    return a+b ;
+}
+int subtraction(int a,int b)
+{
+    return a-b ;
+}
+int multiple(int a,int b)
+{
+    return a*b ;
+}
+double divition(int a,int b)
+{
+    return a/b ;
+}
+int module(int a,int b)
+{
+    return a % b;
+}

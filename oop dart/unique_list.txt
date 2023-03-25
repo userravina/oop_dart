@@ -1,0 +1,15 @@
+2.write a Dart program to create a function as expression which returns unique list of names by passing a list of names to that function.
+
+
+import 'dart:math';
+
+void main()
+{
+    List l2=set();
+    print(l2.toSet());
+}
+dynamic set()
+{
+    List l1=[1,2,3,4,1,2,3,1,2,1,5,2,7,8,"hellow"];
+    return l1;
+}

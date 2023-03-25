@@ -1,0 +1,33 @@
+9. write a Dart Class which convert given distance in appropriate feet and inches.
+
+import 'dart:io';
+
+class A
+{
+  double feet=0,inch=0;
+
+  void set()
+  {
+    print("Enter the value of feet:-");
+    feet = double.parse(stdin.readLineSync()!);
+
+    print("Enter the value of Inch:-");
+    inch = double.parse(stdin.readLineSync()!);
+  }
+  void get()
+  {
+    if(inch >= 12)
+      {
+        feet = feet + inch / 12;
+        inch = inch % 12;
+      }
+    print("${feet.toInt()} feet ${inch.toInt()} inch");
+  }
+}
+void main()
+{
+  A d1 = A();
+
+  d1.set();
+  d1.get();
+}
